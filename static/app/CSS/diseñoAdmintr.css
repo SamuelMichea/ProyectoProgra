@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#grupoCero{
+    width: 50px;
+    height: 20px;
+}
+#ayuda{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 1px ;
+    margin-top: 10px ;
+}
+#config{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 970px ;
+    margin-top: 10px ;
+}
+#obras{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#actores{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#inicio{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#nombre{
+    margin-left: 650px;
+    margin-top: -310px;
+}
+#jocker{
+    margin-left: 650px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#descripcion{
+    margin-left: 650px;
+    margin-top: 20px;
+}
+#desc{
+    margin-left: 650px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#costo{
+    margin-left: 650px;
+    margin-top: 20px;
+}
+#cost{
+    margin-left: 650px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#aceptar{
+    margin-top: 80px;
+    margin-left: 500px;
+    border-color: black;
+    width: 110px;
+    height: 30px;
+}
+#modificar{
+    margin-left: 10px;
+    border-color: black;
+    width: 110px;
+    height: 30px;
+}#eliminar{
+    margin-left: 10px;
+    border-color: black;
+    width: 110px;
+    height: 30px;
+}
+#eliminar2{
+    margin-left: 10px;
+    border-color: black;
+    width: 150px;
+    height: 30px;
+}
+#imagen3{
+    margin-top: 100px;
+}
+#inpuBuscar{
+    margin-left: -810px;
+}
+#buscar{
+    width: 130px; 
+ }

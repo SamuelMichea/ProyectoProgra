@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#grupoCero{
+    width: 50px;
+    height: 20px;
+}
+#ayuda{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 1px ;
+    margin-top: 10px ;
+}
+#config{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 970px ;
+    margin-top: 10px ;
+}
+#obras{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#actores{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#inicio{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#imagen1{
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 95px ;
+}
+#verMas1{
+    text-decoration: underline;
+    margin-top: -1px;
+    margin-left: 930px ;
+}
+
+#imagen3{
+    margin-top: 30px;
+}
+
+#verMas2{
+    text-decoration: underline;
+    margin-left: 105px;
+    margin-top:-30px;
+}
+#verMas3{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: -30px;
+}
+#imagen2{
+    margin-top: 30px;
+    margin-left: 93px;
+}
+#inpuBuscar{
+    margin-left: -810px;
+}
+#buscar{
+    width: 130px; 
+ }

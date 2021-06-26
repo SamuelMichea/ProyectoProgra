@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLENAR DATOS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/css/diseñoLlenarDaTr.css'%}">
+</head>
+<body>
+        <div id="divIMG">
+        <img src="{% static 'app/IMG/GRUPO CERO.PNG'%}" alt="logo_empresa" width="650">
+      </div>
+    <form id="formulario"action="#" id="formulario">
+        <label for="">Nombre</label><br>
+        <input type="text" name="nombres" id="nombres" placeholder="xxxxx xxxxx"><br>
+        <br>
+        <label for="">Descripcion</label><br>
+        <input type="text" name="usuario" id="descripcion"><br>
+        <br>
+        <label for="">Costo</label><br>
+        <input type="text" name="direccion" id="costo" > <br>
+        <br>
+
+        <div><a href="http://127.0.0.1:8000/subirTrabajos/"><button id="datos">Confirmar Datos</button></a></div>
+
+
+
+    </form>
+    
+</body>
+</html>

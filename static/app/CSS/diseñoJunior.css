@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#grupoCero{
+    width: 50px;
+    height: 20px;
+}
+#ayuda{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 1px ;
+    margin-top: 10px ;
+}
+#config{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 970px ;
+    margin-top: 10px ;
+}
+#obras{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#actores{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#inicio{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#imagenArt{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+#especialidades{
+    font-size: 20px;
+}
+pre{
+    font-size: 20px;
+}
+#nombre{
+    font-size: 20px;
+}
+#añosCa{
+    font-size: 20px;
+}
+#edad{
+    font-size: 20px;
+}
+#imagenObr1{
+    margin-left: 850px;
+    margin-top: -750px;
+}
+#imagenObr2{
+    margin-left: 450px;
+    margin-top: -800px;
+}
+#verMas1{
+    margin-left: 555px;
+    margin-top: -310px;
+    text-decoration: underline;
+}
+#verMas2{
+    margin-left: 960px;
+    margin-top: -35px;
+    text-decoration: underline;
+}
+#imagenObr3{
+    margin-left: 850px;
+    margin-top: -210px;
+}
+#imagenObr4{
+    margin-left: 450px;
+    margin-top: -260px;
+}
+#verMas3{
+    margin-left: 960px;
+    text-decoration: underline;
+    margin-top: -30px;
+}
+#verMas4{
+    margin-left: 555px;
+    text-decoration: underline;
+    margin-top: -40px;
+}
+#inpuBuscar{
+    margin-left: -810px;
+}
+#buscar{
+    width: 130px; 
+ }

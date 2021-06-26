@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#grupoCero{
+    width: 50px;
+    height: 20px;
+}
+#config{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 970px ;
+    margin-top: 10px ;
+}
+#inicio{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#obras{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#actores{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#ayuda{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 1px ;
+    margin-top: 10px ;
+}
+#carrusel{
+    text-align: center;
+}
+#texto1{
+    text-align: center;
+    margin-top: 30px;
+}
+#carrusel2{
+    text-align: center;
+    margin-top: 30px;
+}
+#masObras{
+    margin-top: 30px;
+}
+#masObras2{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+#actoress{
+    margin-top: 30px;
+    text-align: center;
+}
+#verMas{
+    margin-top: 20px;
+    text-decoration: underline;  
+}
+#masObras1{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+#verMas2{
+    margin-top: 20px;
+    text-decoration: underline;  
+}
+#buscar{
+    width: 130px; 
+ }

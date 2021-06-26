@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="  {% static 'app/css/diseñoJunior.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <title>JUNIOR FERNANDEZ</title>
+<head>
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #59768b;">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/inicio/">
+            <img id="grupoCero" src="  {% static 'app/IMG/GRUPO CERO.PNG'%}" alt="logo_empresa">
+          </a>  
+          <form class="form-inline">
+            <input id ="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:8000/inicio/">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/actores/">Actores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/pinturas/">Obras</a>
+              </li>
+              <li id="buscar" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://127.0.0.1:8000/preguntasFrecuentes/">Ayuda</a>
+                  <a class="dropdown-item" href="http://127.0.0.1:8000">Salir</a>
+                </div>
+              </li>
+        </nav>
+          <div>
+            <img id="imagenArt" src="  {% static 'app/IMG/imagen21.jpg'%}" class="rounded" alt="Cinque Terre" width="200" height="300">
+          </div>
+          <div  class="container">
+            <pre id="nombre">Junior Fernandez</pre>
+            <pre id="edad">55 años</pre>
+            <pre id="especialidades">Experto en pinturas abstractas,
+carpinteria y soldador.</pre>
+            <pre id="añosCa">25 años de carrera</pre>
+          </div>
+          <div  class="container">
+            <img id="imagenObr1" src="  {% static 'app/IMG/pintura12.jpg'%}" class="rounded" alt="Cinque Terre" width="300" height="200">
+            <img id="imagenObr2" src="  {% static 'app/IMG/pintura13.jpg'%}" class="rounded" alt="Cinque Terre" width="300" height="200">
+            <a href="http://127.0.0.1:8000/pinturas/"><h4 id="verMas1">Ver mas</h4></a>
+            <a href="http://127.0.0.1:8000/pinturas/"><h4 id="verMas2">Ver mas</h4></a>
+          </div>
+          <div  class="container">
+            <img id="imagenObr3" src="  {% static 'app/IMG/imagen12.jpg'%}" class="rounded" alt="Cinque Terre" width="300" height="200">
+            <img id="imagenObr4" src="  {% static 'app/IMG/pintura14.jpg'%}" class="rounded" alt="Cinque Terre" width="300" height="200">
+            <a href="http://127.0.0.1:8000/pinturas/"><h4 id="verMas3">Ver mas</h4></a>
+            <a href="http://127.0.0.1:8000/pinturas/"><h4 id="verMas4">Ver mas</h4></a>
+          </div>
+    </body>
+    <footer>© Derechos Reservados.</footer>
+</head>

@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#grupoCero{
+    width: 50px;
+    height: 20px;
+}
+#ayuda{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 1px ;
+    margin-top: 10px ;
+}
+#config{
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-left: 500px;
+    margin-left: 970px ;
+    margin-top: 10px ;
+}
+#obras{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#actores{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#inicio{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 10px ;
+    float: right;
+}
+#img1{
+    border-color: black;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#cargImag{
+    margin-left: 255px;
+    margin-top: 25px;
+    border-color: black;
+}
+#IMG{
+    margin-left: 312px;
+    margin-top: -250px;
+}
+#misTr{
+    margin-left:350px;
+    margin-top: 40px;
+    border-color: black;
+    width: 200px;
+    height: 30px;
+    
+    
+}
+#subTr{
+    border-color: black;
+    width: 200px;
+    height: 30px;
+    background-color: dimgray;
+}
+
+#aceptar{
+    margin-top: 80px;
+    margin-left: 210px;
+    border-color: black;
+    width: 110px;
+    height: 30px;
+}
+#modificar{
+    margin-left: 10px;
+    border-color: black;
+    width: 110px;
+    height: 30px;
+}#eliminar{
+    margin-left: 10px;
+    border-color: black;
+    width: 110px;
+    height: 30px;
+}
+
+#imgArtista{
+    float: left;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+#info{
+    font-size: 30px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
+#inpuBuscar{
+    margin-left: -810px;
+}
+#buscar{
+    width: 130px; 
+ }

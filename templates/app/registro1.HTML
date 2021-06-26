@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>Validacion de datos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link rel="stylesheet" href="{% static 'app/css/style2.css'%}">
+</head>
+<body>
+    <script>
+        $(function name(params) 
+        {
+            $("#formulario").validate({
+                rules:{
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: "required",
+                    password2:{
+                        required: true,
+                        equalTo: "#password" 
+                    }   
+                    
+                },
+                messages:{
+                    email:{
+                        required:'Ingrese correo electronico.',
+                        email:'Formato incorrecto.'
+                    },
+                    password:{
+                        required:'Ingrese contraseña.',
+                        minlength:'Largo insuficiente.'
+                    },
+                    password2:{
+                        required:'Reingrese contraseña.',
+                        equalTo:'La contraseña no coincide.',
+                        minlength:'Largo insuficiente.'
+                    },
+                    rut:{
+                        minlength:'Rut invalido.',
+                        maxlength:'Rut invalido.'
+                    }
+                }
+            })
+        });
+    </script>
+        <div id="divIMG">
+        <img src="{% static 'app/IMG/GRUPO CERO.PNG'%}" alt="logo_empresa" width="650">
+      </div>
+    <form id="formulario" action="./subirTrabajos.html" id="formulario">
+        <label for="">Nombres</label>
+        <input type="text" name="nombres" id="nombres" placeholder="xxxxx xxxxx"><br>
+        <br>
+        <label for="">Apellidos</label> 
+        <input type="text" name="apellidos" id="apellidos" placeholder=" xxxxxx xxxxxx"><br>
+        <br>
+        <label for="">Correo Electronico</label> 
+        <input type="email" name="email" id="email" placeholder="correo@correo.cl"><br>
+        <br>
+        <label for="">Usuario</label> 
+        <input type="text" name="usuario" id="usuario" placeholder="pahpahpah"><br>
+        <br>
+        <label for="">Fecha de Nacimiento</label>
+        <input type="date"><br>
+
+        <br>
+        <label for="">Rut</label>
+        <input type="text" name="rut" id="rut" minlength="9" maxlength="10" placeholder="11111111-1"><br>
+        <br>
+        <label for="">Dirección</label>
+        <input type="text" name="direccion" id="direccion" > <br>
+        <br>
+        <label for="">Contraseña</label>
+        <input type="password" name="password" id="password" minlength="6" ><br>
+        <br>
+        <label for="">Confirmacion</label>
+        <input type="password" name="password2" id="password2" minlength="6"><br>
+        <br>
+
+        <button>Crear Cuenta</button></a>
+
+
+    </form>
+    
+</body>
+</html>

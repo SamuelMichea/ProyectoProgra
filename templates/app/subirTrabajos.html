@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'app/css/diseñoSubir.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <title>SUBIR TRABAJOS</title>
+<head>
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #59768b;">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/inicio/">
+            <img id="grupoCero" src="{% static 'app/IMG/GRUPO CERO.PNG'%}" alt="logo_empresa">
+          </a>  
+          <form class="form-inline">
+            <input id ="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:8000/inicio/">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/actores/">Actores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/pinturas/">Obras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/misTrabajos/">Gestion Proyectos</a>
+              </li>
+              <li id="buscar" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://127.0.0.1:8000/preguntasFrecuentes/">Ayuda</a>
+                  <a class="dropdown-item" href="http://127.0.0.1:8000">Salir</a>
+                </div>
+              </li>
+        </nav>
+          <div  class="container">
+            <a href="http://127.0.0.1:8000/misTrabajos/"><button id="misTr">MIS TRABAJOS</button></a>
+            <a href="http://127.0.0.1:8000/subirTrabajos/"><button id="subTr">SUBIR TRABAJOS</button></a>
+          </div>
+          <div  class="container">
+            <img id="img1" src="{% static 'app/IMG/im1.png'%}" class="rounded" alt="Cinque Terre" width="350" height="350"><br>
+            <br>
+            <div><button id="cargImag">SELECCIONAR IMAGEN</button></div>
+            <div><a href="http://127.0.0.1:8000/llenarDatosSubir/"><button id="datos">LLENAR DATOS</button></a></div>
+          </div>
+          
+          </div>
+    </body>
+
+</head>
