@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Obras
+from .models import Obra
 # Register your models here.
-admin.site.register(Obras)
+admin.site.register(Obra)

@@ -1,0 +1,27 @@
+{% load static %}1
+{% load bootstrap4 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODIFICAR</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link rel="stylesheet" href="{% static 'app/css/diseñoLlenarDaTr.css'%}">
+</head>
+<body>
+    <h1 style="text-align: center">MODIFICA UNA OBRA</h1>
+
+        <form action="" method="POST" id="formulario">
+            {% csrf_token %}
+
+            {{ form.as_table }}
+
+            <button class="btn btn-outline-success"  type="submit" style="align-items: center;">Modificar Obra</button>
+          <span style="color:green">{{ mensaje }}</span>
+        </form>
+</body>
+</html>

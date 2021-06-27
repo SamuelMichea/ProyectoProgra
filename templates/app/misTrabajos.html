@@ -1,17 +1,20 @@
+{% load crispy_forms_tags %}
+{% load static %}
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% load static %}
   <link rel="stylesheet" href="{% static 'app/css/diseñoMisTr.css'%}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
   <title>MIS TRABAJOS</title>
+  {% bootstrap_css %}
+  {% bootstrap_javascript jquery='full' %}
 <head>
     <body>
         <nav class="navbar navbar-light" style="background-color: #59768b;">
@@ -70,6 +73,17 @@
             <h5 id="editar2"> Editar</h5>
             <h5 id="editar3"> Editar</h5>
           </div>
+          <br>
+          <h1 style="text-align: center">REGISTRA UNA OBRA</h1>
+
+            <form action="" method="POST" id="formulario">
+            {% csrf_token %}
+
+             {{ form|crispy }}
+
+            <button class="btn btn-outline-success"  type="submit" style="align-items: center;">Agregar Obra</button>
+            <span style="color:green">{{ mensaje }}</span>
+            </form>
     </body>
 <footer>© Derechos Reservados.</footer>
 

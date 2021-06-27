@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from app.forms import ObraForm
+from django.shortcuts import redirect, render
+from .models import Obra
 
 def index(request):
     return render(request, 'app/index.html')
@@ -36,9 +39,6 @@ def juniorFernandez(request):
 def llenarDatosUsuario(request):
     return render(request, 'app/llenarDatosUsuario.html')
         
-def misTrabajos(request):
-    return render(request, 'app/misTrabajos.html')
-        
 def modificarCuenta(request):
     return render(request, 'app/modificarCuenta.html')
         
@@ -69,3 +69,47 @@ def validacion2(request):
 def llenarDatosSubir(request):
     return render(request, 'app/llenarDatosSubir.html')
 
+def buscador(request):
+    misTrabajos= Obra.objects.all()
+    datos = {
+        'misTrabajos' : misTrabajos
+    }
+
+    return render (request, 'app/buscador.html',datos)
+
+def misTrabajos(request):
+    datos = {
+        'form': ObraForm()
+      }
+    if request.method == 'POST':
+        formulario = ObraForm(request.POST)
+
+        if formulario.is_valid:
+            formulario.save()
+            datos['mensaje'] = "Obra Subida Correctamente"
+    return render(request, 'app/misTrabajos.html')
+
+def modificar(request,id):
+
+    obra = Obra.objects.get(idObra=id)
+
+    datos = {
+        'form' : ObraForm(instance=obra)
+    }
+
+    if request.method == 'POST':
+
+        formulario = ObraForm(data=request.POST,instance=obra)
+
+        if formulario.is_valid:
+            formulario.save()
+            datos['mensaje'] = "Datos modificados correctamente"
+
+    return render (request, 'app/modificar.html', datos)
+
+def eliminar(request,id):
+
+    obra = Obra.objects.get(idObra=id)
+    obra.delete()
+
+    return redirect(to="buscador")

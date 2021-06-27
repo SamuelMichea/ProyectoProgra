@@ -1,0 +1,42 @@
+{% load static %}1
+{% load bootstrap4 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCAR</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link rel="stylesheet" href="{% static 'app/css/diseñoLlenarDaTr.css'%}">
+</head>
+<body>
+    <h1 style="text-align: center">LISTADO DE OBRAS</h1>
+
+      <table class="table table-hover">
+        <tr>
+          <td>ID Obra</td>
+          <td>Nombre de la Obra</td>
+          <td>Descripcion de la Obra</td>
+          <td>Precio</td>
+          <td>Acciones</td>
+        </tr>
+        {% for obra in obras %}
+        <tr>
+          <td>{{ obra.idObra }}</td>
+          <td>{{ obra.nombre }}</td>
+          <td>{{ obra.descripcion }}</td>
+          <td>{{ obra.precio }}</td>
+          <td>
+            <a href="{% url 'modificar' obra.idObra%}">M</a>
+            <a href="{% url 'eliminar' obra.idObra%}">E</a>
+
+          </td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
